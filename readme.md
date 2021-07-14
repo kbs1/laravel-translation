@@ -1,7 +1,10 @@
+Original package with PHP8 compatibility fix
+===================
+
 <div align="center">
-  
+
 ![Laravel Translation](logo.png)
-  
+
 Translation management for your Laravel application.
 
 ![Laravel Translation UI](translation.png)
@@ -81,7 +84,7 @@ scan_paths [array]
 ```
 Choose which paths to use when searching for missing translations. Narrowing the
 search to specific directories will result in a performance increase when
-scanning for missing translations. 
+scanning for missing translations.
 
 ```
 ui_url [string]
@@ -137,27 +140,27 @@ translation management.
 
 ```
 translation:add-language
-```                  
+```
 Add a new language to the application.
-  
+
 ```
 translation:add-translation-key
-```            
+```
 Add a new language key for the application.
-  
+
 ```
 translation:list-languages
 ```
 List all of the available languages in the application.
-  
+
 ```
 translation:list-missing-translation-keys
 ```
 List all of the translation keys in the app which don't have a corresponding translation.
-  
+
 ```
 translation:sync-translations
-```             
+```
 Synchronise translations between drivers. This is useful if you have an exisitng
 application using the native file based language files and wish to move to the
 database driver. Running this command will take all of the translations from the
