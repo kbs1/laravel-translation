@@ -44,7 +44,20 @@ Below are a full list of features:
 
 Install the package via Composer
 
-`composer require kbs1/laravel-translation`
+Add fork into composer.json:
+```
+"repositories": [
+	{
+		"type": "vcs",
+		"url": "https://github.com/kbs1/laravel-translation"
+	}
+],
+```
+
+Then add this line to `require` section:
+```
+"joedixon/laravel-translation": "dev-master"
+```
 
 Publish configuration and assets
 
